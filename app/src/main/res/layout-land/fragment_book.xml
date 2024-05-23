@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/book_label"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/book_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/book_image_label"
+                    android:padding="5sp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/book" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <CheckBox
+                android:id="@+id/book_status"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/book_status_false_label"
+                android:textAlignment="textEnd"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/book_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/red"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/book_delete_button"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15sp">
+
+            <EditText
+                android:id="@+id/book_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/book_name_hint"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="@color/hint"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_author_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/book_author"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/author_choice_hint"
+                    android:importantForAutofill="no"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_publisher_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/book_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/publisher_choice_hint"
+                    android:importantForAutofill="no"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_year_publish_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/book_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/book_year_publish_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="numberSigned"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_code_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/book_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/book_code_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_count_page_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/book_count_page"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/book_count_page_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/book_hardcover_label"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/book_hardcover"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.6"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:hint="@string/book_hardcover_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/hint"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10sp"
+                android:text="@string/book_essay_label"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/book_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:hint="@string/book_essay_hint"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="@color/hint"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

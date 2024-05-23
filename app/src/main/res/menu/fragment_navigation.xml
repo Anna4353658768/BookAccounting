@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_list_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/books"
+        android:title="@string/menu_book_item" />
+    <item
+        android:id="@+id/menu_item_list_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/authors"
+        android:title="@string/menu_author_item" />
+    <item
+        android:id="@+id/menu_item_list_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/publishers"
+        android:title="@string/menu_publisher_item" />
+</menu>

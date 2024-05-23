@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Учет книг</string>
+
+    <string name="book_label">Книга</string>
+    <string name="menu_book_item">Книги</string>
+    <string name="book_status_label">Наличие:</string>
+    <string name="book_status_true_label">Есть в наличии</string>
+    <string name="book_status_false_label">Нет в наличии</string>
+    <string name="book_image_label">Изображение книги</string>
+    <string name="book_author_label">Автор:</string>
+    <string name="book_publisher_label">Издатель:</string>
+    <string name="book_year_publish_label">Год выпуска:</string>
+    <string name="book_code_label">ISBN:</string>
+    <string name="book_count_page_label">Количество страниц:</string>
+    <string name="book_hardcover_label">Тип переплета:</string>
+    <string name="book_essay_label">Описание</string>
+    <string name="book_author_hint">Введите автора</string>
+    <string name="book_publisher_hint">Введите издателя</string>
+    <string name="book_year_publish_hint">Введите год выпуска</string>
+    <string name="book_code_hint">Введите ISBN код</string>
+    <string name="book_count_page_hint">Введите количество</string>
+    <string name="book_hardcover_hint">Введите тип переплета</string>
+    <string name="book_essay_hint">Введите краткий пересказ книги</string>
+    <string name="book_name_hint">Введите название книги</string>
+    <string name="book_delete_button">Удалить книгу</string>
+
+    <string name="author_label">Автор</string>
+    <string name="menu_author_item">Авторы</string>
+    <string name="author_name_label">Имя:</string>
+    <string name="author_surname_label">Фамилия:</string>
+    <string name="author_patronymic_label">Отчество:</string>
+    <string name="author_image_label">Изображение автора</string>
+    <string name="author_name_hint">Введите имя</string>
+    <string name="author_surname_hint">Введите фамилию</string>
+    <string name="author_patronymic_hint">Введите отчество</string>
+    <string name="author_delete_button">Удалить автора</string>
+    <string name="author_choice_hint">Нажимте для выбора автора</string>
+
+    <string name="publisher_label">Издатель</string>
+    <string name="menu_publisher_item">Издатели</string>
+    <string name="publisher_name_label">Название:</string>
+    <string name="publisher_address_label">Адрес:</string>
+    <string name="publisher_site_label">Сайт:</string>
+    <string name="publisher_image_label">Изображение издателя</string>
+    <string name="publisher_name_hint">Введите название</string>
+    <string name="publisher_address_hint">Введите адрес</string>
+    <string name="publisher_site_hint">Введите URL сайта</string>
+    <string name="publisher_delete_button">Удалить издателя</string>
+    <string name="publisher_choice_hint">Нажимте для выбора издателя</string>
+
+    <string name="list_item_null">Нет данных</string>
+    <string name="show_subtitle">Показать подзаголовок</string>
+    <string name="hide_subtitle">Скрыть подзаголовок</string>
+    <string name="dialog_search">Поиск...</string>
+    <string name="menu_add">Добавить</string>
+
+    <string name="new_book">Новая книга</string>
+    <string name="book_list_empty">Список книг пуст</string>
+    <string name="new_book_list_empty">Добавить книгу</string>
+    <string name="book_name_list_item_null">Введите название книги</string>
+
+    <string name="new_publisher">Новый издатель</string>
+    <string name="publisher_list_empty">Список издателей пуст</string>
+    <string name="new_publisher_list_empty">Добавить издателя</string>
+    <string name="publisher_name_list_item_null">Введите издателя</string>
+
+    <string name="new_author">Новый автор</string>
+    <string name="author_list_empty">Список авторов пуст</string>
+    <string name="new_author_list_empty">Добавить автора</string>
+    <string name="author_name_list_item_null">Введите фамилию автора</string>
+    <string name="author_books">Книги автора</string>
+
+    <plurals name="subtitle_plural_book">
+        <item quantity="zero">%1$d книг</item>
+        <item quantity="one">%1$d книга</item>
+        <item quantity="two">%1$d книги</item>
+        <item quantity="few">%1$d книги</item>
+        <item quantity="many">%1$d книг</item>
+        <item quantity="other">%1$d книг</item>
+    </plurals>
+
+    <plurals name="subtitle_plural_publisher">
+        <item quantity="zero">%1$d издателей</item>
+        <item quantity="one">%1$d издатель</item>
+        <item quantity="two">%1$d издателя</item>
+        <item quantity="few">%1$d издателя</item>
+        <item quantity="many">%1$d издателей</item>
+        <item quantity="other">%1$d издателей</item>
+    </plurals>
+
+    <plurals name="subtitle_plural_author">
+        <item quantity="zero">%1$d авторов</item>
+        <item quantity="one">%1$d автор</item>
+        <item quantity="two">%1$d автора</item>
+        <item quantity="few">%1$d автора</item>
+        <item quantity="many">%1$d авторов</item>
+        <item quantity="other">%1$d авторов</item>
+    </plurals>
+
+    <string name="authorization_new_account_label"><u>Создать новый аккаунт</u></string>
+    <string name="authorization_label">Авторизация</string>
+    <string name="authorization_login_label">Логин</string>
+    <string name="authorization_login_hint">Введите логин</string>
+    <string name="authorization_password_label">Пароль</string>
+    <string name="authorization_password_hint">Введите пароль</string>
+    <string name="authorization_log_in_label">Войти</string>
+
+    <string name="registration_label">Регистрация</string>
+    <string name="registration_new_account_label">Создать аккаунт</string>
+    <string name="registration_email_label">Почта</string>
+    <string name="registration_email_hint">Введите электронную почту</string>
+
+    <string name="profile_label">Профиль</string>
+    <string name="profile_exit_label">Выйти</string>
+
+</resources>

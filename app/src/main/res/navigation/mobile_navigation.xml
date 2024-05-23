@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_book">
+
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.example.books.fragment.list.BookListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_book_list" />
+
+    <fragment
+        android:id="@+id/navigation_author"
+        android:name="com.example.books.fragment.list.AuthorListFragment"
+        android:label="@string/menu_author_item"
+        tools:layout="@layout/fragment_author_list" />
+
+    <fragment
+        android:id="@+id/navigation_publisher"
+        android:name="com.example.books.fragment.list.PublisherListFragment"
+        android:label="@string/menu_publisher_item"
+        tools:layout="@layout/fragment_publisher_list" />
+</navigation>
